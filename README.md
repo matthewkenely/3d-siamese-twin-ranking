@@ -1,6 +1,7 @@
 # Siamese Network Embeddings for Brain Region Ranking in MRI Twin Identification
 
 [![Models](https://img.shields.io/badge/Models-Available-blue)](https://drive.google.com/drive/folders/1AT22UDsgiR6NRpqpN0CBJRxVZWEFfX68?usp=sharing)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Deep learning framework for identifying genetic similarity in brain MRI data using Siamese networks with Layer-Wise Relevance Propagation (LRP) analysis.
 
