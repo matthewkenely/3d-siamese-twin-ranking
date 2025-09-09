@@ -10,6 +10,15 @@ Deep learning framework for identifying genetic similarity in brain MRI data usi
 - **Ranks brain regions** by discriminative importance for genetic relatedness detection  
 - **Provides interpretable results** through Layer-Wise Relevance Propagation analysis
 
+## Dataset
+
+- **Source**: Human Connectome Project S1200 Data Release
+- **Subjects**: 138 monozygotic twin pairs (276 subjects)
+- **Resolution**: T1-weighted images (260 × 311 × 260 voxels)
+- **Processing**: Downscaled to 86 × 103 × 86 for training
+
+![Dataset Example](assets/dataset_example.png)
+
 ## Architecture
 
 - **Three 3D CNN backbones**: Modified U-Net, ResNet-18, and DenseNet-121
@@ -17,12 +26,7 @@ Deep learning framework for identifying genetic similarity in brain MRI data usi
 - **Triplet loss optimization** with hard negative mining
 - **LRP attribution analysis** for spatial interpretation
 
-## Dataset
-
-- **Source**: Human Connectome Project S1200 Data Release
-- **Subjects**: 138 monozygotic twin pairs (276 subjects)
-- **Resolution**: T1-weighted images (260 × 311 × 260 voxels)
-- **Processing**: Downscaled to 86 × 103 × 86 for training
+![Average LRP](assets/averagelrp.png)
 
 ## Performance
 
@@ -32,16 +36,25 @@ Deep learning framework for identifying genetic similarity in brain MRI data usi
 | ResNet-18    | 89.5%    | 93.7%   |
 | DenseNet-121 | 87.3%    | 92.1%   |
 
+![Loss Graphs](assets/lossgraphs.png)
+
+## Connectome Workbench Clinical Integration
+
+- **Medical format conversion**: Automated NIfTI and GIFTI format generation
+- **Subject-specific atlas generation**: HCP-MMP 1.0 parcellation in native T1w space
+- **GIFTI surface formats**: Cortical mapping for detailed hemisphere-specific visualization
+
+![Connectome Workbench](assets/volumeandsurface.png)
+
 ## Installation
 
 ```bash
 # Clone repository
 git clone https://github.com/matthewkenely/3d-siamese-twin-ranking.git
-cd siamese-brain-twin-ranking
+cd 3d-siamese-twin-ranking
 
 # Install dependencies
 pip install -r requirements.txt
-pip install torch torchvision nibabel nilearn
 
 # Download pre-trained models
 # Available at: https://drive.google.com/drive/folders/1AT22UDsgiR6NRpqpN0CBJRxVZWEFfX68?usp=sharing
