@@ -1,4 +1,4 @@
-# Siamese Network Embeddings for Brain Region Ranking in MRI Twin Identification
+# Siamese Network Embeddings for Brain Region Ranking in MRI Twin Identification via Layer-Wise Relevance Propagation
 
 [![Models](https://img.shields.io/badge/Models-Available-blue)](https://drive.google.com/drive/folders/1AT22UDsgiR6NRpqpN0CBJRxVZWEFfX68?usp=sharing)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
